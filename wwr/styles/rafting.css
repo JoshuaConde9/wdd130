@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 :root{
-    --primary-color: #0091ad; /*Blue Munsell*/
+    --primary-color: #015768; /*Blue Munsell*/
     --secondary-color: #6efafb; /*Electric Blue*/
     --accent1-color: #fff4e4; /*Old Lace*/
     --accent2-color: #f7e8a4; /*Vanilla*/
@@ -20,13 +20,110 @@ header, main, footer {
     width: 840px;
     margin: 0 auto;
 }
+header{
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr;
+    align-items: center;
+    background-color: var(--secondary-color);
+    margin: 30px 30px 30px 30px;
+    justify-self: center;
+    padding: 20px 30px 20px 10px;
+
+}
+header img{
+    border: 4px solid var(--primary-color);
+    grid-column-start: 2;
+}
+    
+header nav{
+    display: flex;
+    grid-column-start: 3;
+    background-size: auto;
+    align-content: end;
+    flex-wrap: wrap;
+}
+header nav a{
+    border: 4px solid var(--primary-color);
+    padding: 5px 10px;
+    background-color: var(--accent1-color);
+}
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
-nav, p, section, article {
+nav, p, p2, section, article {
     margin: 16px;
     padding: 8px;
+}
+section{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-content: center;
+}
+.history{
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-rows: 100px;
+    background-color: var(--secondary-color);
+    justify-content: center;
+    align-content: center;
+}
+.history h2{
+    bottom: -10px;
+    position: relative;
+    justify-self: center;
+}
+.history img{
+    position: relative;
+    justify-self: center;
+    width: 200px;
+    height: auto;
+    bottom: 50px;
+    grid-column-start: 2;
+    box-shadow: 0 0 30px gray;
+}
+.history p{
+    position: relative;
+    bottom: -20px;
+    display: flex;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+.history p2{
+    position: relative;
+    bottom: -20px;
+    display: flex;
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+.adventure{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10px 155px 50px;
+    padding: 20px;
+    background-color: var(--accent2-color);
+}
+figcaption{
+    grid-row-start: 3;
+    text-align: center;
+    position: relative;
+    bottom: -65px;
+}
+.adventure h2{
+    display: block;
+    position: absolute;
+    justify-self: center;
+}
+.adventure img{
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    bottom: -60px;
+    width: 155px;
+    padding: 10px 10px;
+    height: fit-content;
+    flex-direction: column;
 }
 .socialmedia a {
     text-decoration: none;
@@ -38,6 +135,8 @@ nav, p, section, article {
     display: block;
     width: 100%;
     height: auto;
+    align-self: center;
+    grid-column-start: 2;
 }
 h1 {
     position: absolute;
@@ -45,23 +144,40 @@ h1 {
     width: 100%;
     padding: 16px;
     text-align: center;
-    opacity: 0.7;
+    opacity: 0.9;
     background-color: var(--accent1-color);
     color: var(--primary-color);
 }
 article {
-    position: relative;
+    position: absolute;
     text-align: center;
+    top: 400px;
     background-color: var(--accent2-color);
 }
 .hero article img {
     float: right;
     width: 125px;
+    margin: 0 0 0 20px;
+    box-shadow: 0 0 30px #888;
+}
+footer{
+    display: grid;
+    grid-template-columns: 6fr;
+    align-items: center;
+    background-color: var(--secondary-color);
+    margin: 30px 30px 30px 30px;
+    justify-self: center;
+    padding: 5px 30px 5px 10px;
 }
 footer a img {
-    width: 50px;
+    width: 40px;
     height: auto;
+    background-color: var(--accent1-color);
+    padding: 3px;
 }
-header img {
-    border: 3px solid var(--primary-color);
+footer nav{
+    grid-column-end: 5;
+}
+footer p{
+    grid-column-start: 3;
 }

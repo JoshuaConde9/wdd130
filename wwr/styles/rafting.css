@@ -51,7 +51,7 @@ h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
-nav, p, p2, section, article {
+nav, p, .p2, section, article {
     margin: 16px;
     padding: 8px;
 }
@@ -90,7 +90,7 @@ section{
     grid-column-start: 1;
     grid-row-start: 1;
 }
-.history p2{
+.history .p2{
     position: relative;
     bottom: -20px;
     display: flex;

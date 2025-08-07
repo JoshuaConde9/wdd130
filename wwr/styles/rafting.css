@@ -47,7 +47,7 @@ header nav a{
     padding: 5px 10px;
     background-color: var(--accent1-color);
 }
-h1, h2 {
+h1, h2, h3 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
@@ -104,7 +104,7 @@ section{
     padding: 20px;
     background-color: var(--accent2-color);
 }
-figcaption{
+.adventure figcaption{
     grid-row-start: 3;
     text-align: center;
     position: relative;
@@ -128,10 +128,10 @@ figcaption{
 .socialmedia a {
     text-decoration: none;
 }
-.hero {
+.hero, .contact {
     position: relative;
 }
-.hero img {
+.hero img, .contact img {
     display: block;
     width: 100%;
     height: auto;
@@ -143,10 +143,10 @@ h1 {
     top: 20px;
     width: 100%;
     padding: 16px;
-    text-align: center;
     opacity: 0.9;
     background-color: var(--accent1-color);
     color: var(--primary-color);
+    text-align: center;
 }
 article {
     position: absolute;
@@ -162,6 +162,7 @@ article {
 }
 footer{
     display: grid;
+    position: relative;
     grid-template-columns: 6fr;
     align-items: center;
     background-color: var(--secondary-color);
@@ -180,4 +181,145 @@ footer nav{
 }
 footer p{
     grid-column-start: 3;
+}
+
+
+.contact p {
+    display: relative;
+    position: relative;
+    width: 40%;
+    height: auto;
+    align-self: center;
+    justify-self: right;
+    text-align: right;
+    top: -110px;
+    color: var(--primary-color);
+    background-color: var(--accent2-color);
+}
+.connect {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    background-color: var(--secondary-color);
+    margin: 10px;
+    margin-top: 60px;
+    justify-self: center;
+    padding: 30px;
+    width: 100%;
+}
+.connect h2 {
+    padding: 10px;
+    text-decoration: underline;
+    justify-self: center;
+}
+.connect h3 {
+    padding: 1px 10px;
+    text-decoration-style: dotted;
+}
+.connect p{
+    padding: 1px 10px;
+}
+iframe{
+    width: 750px;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: 0 0 30px #888;
+    justify-self: center;
+}
+
+
+.employees {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    padding: 10px;
+    background-color: var(--accent2-color);
+    justify-self: center;
+}
+
+.img2 {
+    height: 134px;
+    width: auto;
+}
+.employees img {
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    justify-self: center;
+    width: 200px;
+    height: fit-content;
+    flex-direction: row;
+    box-shadow: 0 0 30px #888;
+}
+.employees figcaption {
+    text-align: center;
+    padding: 30px 0px;
+}
+.contact {
+    margin-bottom: -75px;
+}
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3rem;
+}
+form {
+    position: block;
+    background-color: var(--accent2-color);
+    padding: 10px;
+    width: 80%;
+    justify-self: center;
+    border: 4px solid var(--primary-color);
+    top: -1280px;
+    left: -30px;
+    size-adjust: 20%;
+}
+label, input, button, select, textarea {
+    font-family: var(--body-font)
+}
+label {
+    text-align: right;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+}
+input, textarea {
+    padding: 0.3rem;
+    font-size: 1rem;
+}
+input[type="text"], input[type="email"], textarea{
+    width: 100%;
+    margin: 10px 0px;
+}
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: top;
+}
+button {
+    margin: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+button:hover {
+    background-color: var(--secondary-color);
+}
+.subscription {
+    text-align: center;
+    padding-top: 3px;
+}
+.message-text {
+    justify-self: center;
 }

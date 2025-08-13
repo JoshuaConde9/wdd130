@@ -488,7 +488,7 @@ button:hover {
 }
 table {
     border-collapse: collapse;
-    border: 4px solid rgb(0 0 0 / 0.2);
+    border: 5px solid rgb(0 0 0 / 0.2);
     font-size: 20px;
     letter-spacing: 1px;
     width: 100%;

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="About Us - White Water Rafting">
+    <meta name="description" content="White Water Rafting">
     <meta name="author" content="Joshua Conde Pérez">
     <link rel="stylesheet" href="styles/rafting.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us: Splashing River Rafting</title>
+    <title>Welcome to Splashing River Rafting</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
@@ -22,22 +22,22 @@
         </nav>
     </header>
     <main>
-        <div class="hero">
-            <img src="images/hero.jpg" alt="Splashing River Rafting">
-            <h1>Splashing River Rafting</h1>
-            <article>
-                <img src="images/happy-customer.jpg" alt="Happy Rafting Customer">
-                <p class="splash-into-fun">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut sunt quis quos perferendis nostrum ad cumque vel molestias, molestiae quibusdam eligendi voluptate modi qui nisi praesentium quasi aliquam reprehenderit obcaecati!</p>
-            </article>
+        <div class="hero-index">
+            <img src="images/hero-index.jpg" alt="Welcome to Splashing River Rafting">
+                <p>Splash into fun, travel with us!</p>
+            <h1>Welcome to Splashing River Rafting!</h1>
         </div>
-        <section class="history">
-            <h2>History</h2>
-            <img src="images/history.jpg" alt="The Splashing River">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque perferendis libero architecto ex saepe praesentium officia ut adipisci nobis aut. Quidem laboriosam facilis incidunt, natus totam amet eum. Nam, facere?</p>
-            <p class="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque perferendis libero architecto ex saepe praesentium officia ut adipisci nobis aut. Quidem laboriosam facilis incidunt, natus totam amet eum. Nam, facere?</p>
-        </section>
-        <section class="adventure">
-            <h2>Adventure Awaits You!</h2>
+        <div>
+            <nav class="trips">
+                <a href="trips.html">
+                    <p>Go to trips</p>
+                    <img src="images/trips-logo.png" alt="Facebook Page">
+                </a>
+            </nav>
+        </div>
+    <h2 class="offerings-title">Offerings</h2> 
+        <section class="offerings">
+            
             <figure>
                 <img src="images/river-rafting.jpg" alt="Rafting Experience">
                 <figcaption>Rapid Rush</figcaption>
@@ -54,11 +54,28 @@
                 <img src="images/river-rafting4.jpg" alt="Rafting Experience 4">
                 <figcaption>Blue Expedition</figcaption>
             </figure>
-            <figure>
-                <img src="images/river-rafting5.jpg" alt="Rafting Experience 5">
-                <figcaption>Wild Current</figcaption>
-            </figure>
         </section>
+        <form class="join-newsletter">
+            <fieldset>
+                <legend>Join Our Newsletter!</legend>
+                <p class="legend">Receive our latest news, offers, and more!</p>
+                <div class="contact-info">
+                    <label>Full Name: <input type="text" name="fullname"></label>
+                </div>
+
+                <div class="contact-info">
+                    <label>Email: <input type="email" name="useremail"></label>
+                </div>
+            </fieldset>
+
+                <div class="subscription">
+                    <label for="newsletter-subscription">I consent the use of my personal information by Splashing River Rafting for the purpose of sending promotinal offers and newsletters.</label>
+                    <input type="checkbox" id="newsletter-subscription" name="newsletter-subscription">
+                </div>
+                <button type="submit">Sign Up</button>
+            </fieldset>
+        </form>
+        
     </main>
     <footer>
         <p>©2025 🌊 Splashing River Rafting 🌊  Joshua Conde Pérez</p>
